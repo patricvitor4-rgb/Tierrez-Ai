@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: tierrez-ai
+    runtime: node
+    plan: free
+    buildCommand: echo ok
+    startCommand: node server.js
+    envVars:
+      - {key: APP_KEY, generateValue: true}
+      - {key: SHOPEE_ENV, value: sandbox}
+      - {key: SHOPEE_PARTNER_ID, sync: false}
+      - {key: SHOPEE_PARTNER_KEY, sync: false}
+      - {key: CJ_API_KEY, sync: false}
+      - {key: PUBLIC_URL, sync: false}
+      - {key: SHOPEE_LOGISTICS, value: "[]"}
