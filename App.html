@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0f1b2d"><title>Tierrez AI</title>
+<style>:root{--bg:#f4f6f8;--sf:#fff;--tx:#0f1b2d;--mu:#5d6b7e;--ln:#dde3ea;--ac:#0e8f7e;padding-top:env(safe-area-inset-top)}
+@media(prefers-color-scheme:dark){:root{--bg:#0b1422;--sf:#132136;--tx:#e8eef6;--mu:#93a3b8;--ln:#24354d;--ac:#4fd6c0}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.45 system-ui,sans-serif;padding:0 14px 84px;max-width:720px;margin:auto}
+h1{font-size:24px;margin:16px 0 4px}h1 b{color:var(--ac)}h2{font-size:17px;margin:16px 0 6px}.c{background:var(--sf);border:1px solid var(--ln);border-radius:14px;padding:12px;margin:10px 0}.mu{color:var(--mu);font-size:13px}
+button{font:inherit;border:0;border-radius:10px;padding:9px 13px;background:var(--ac);color:#04201b;font-weight:600}input{font:inherit;width:100%;padding:9px;margin:3px 0 8px;border-radius:9px;border:1px solid var(--ln);background:var(--bg);color:var(--tx)}
+nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--sf);border-top:1px solid var(--ln);padding-bottom:env(safe-area-inset-bottom)}nav a{flex:1;text-align:center;padding:12px 2px;font-size:12px;color:var(--mu)}nav a.on{color:var(--ac);font-weight:700;box-shadow:inset 0 3px var(--ac)}
+.r{display:flex;justify-content:space-between;gap:8px;align-items:center}img{width:56px;height:56px;border-radius:8px;object-fit:cover}</style></head><body>
+<h1>Tierrez <b>AI</b></h1><div class="mu">v2 · conexão real Shopee + CJ</div><div id="m"></div><nav id="n"></nav>
+<script>
+var T="home",G={usd:5.5,com:14,fixa:4,imp:4,mar:25,frete:8},SL=[];try{G=Object.assign(G,JSON.parse(localStorage.tc))}catch(e){}
+function K(){try{if(!localStorage.tk)localStorage.tk=prompt("Senha do app (APP_KEY)")}catch(e){}return localStorage.tk||""}
+function A(p,o){o=o||{};o.headers={"x-key":K(),"Content-Type":"application/json"};return fetch(p,o).then(function(r){if(r.status==401){localStorage.removeItem("tk")}return r.json()})}
+function R(v){return v.toLocaleString("pt-BR",{style:"currency",currency:"BRL"})}
+function pr(c){var d=1-(G.com+G.imp+G.mar)/100;return(c+G.frete+G.fixa)/Math.max(d,.05)}
+function sv(k,v){G[k]=parseFloat(v)||0;localStorage.tc=JSON.stringify(G)}
+function set(h){document.getElementById("m").innerHTML=h;document.getElementById("n").innerHTML=[["home","Painel"],["ped","Pedidos"],["chat","Chat"],["prod","Produtos"],["cfg","Preços"]].map(function(t){return'<a class="'+(T==t[0]?"on":"")+'" onclick="T=\''+t[0]+'\';go()">'+t[1]+'</a>'}).join("")}
