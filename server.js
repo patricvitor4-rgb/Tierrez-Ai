@@ -1,4 +1,4 @@
-// Tierrez AI v2 - servidor real (Node 18+, sem dependencias): node server.js
+require('./ml.js');// Tierrez AI v2 - servidor real (Node 18+, sem dependencias): node server.js
 // Variaveis: SHOPEE_PARTNER_ID, SHOPEE_PARTNER_KEY, SHOPEE_ENV (sandbox|prod), PUBLIC_URL,
 // APP_KEY (sua senha), CJ_API_KEY, SHOPEE_LOGISTICS (ex: [{"logistic_id":90017,"enabled":true}])
 const http=require('http'),fs=require('fs'),crypto=require('crypto');
