@@ -72,5 +72,5 @@ http.createServer(async(q,s)=>{const u=new URL(q.url,'http://x'),j=(c,o)=>{s.wri
     if(u.pathname==='/api/say'){const b=await body(q);return j(200,await say(b.to,b.text))}
     if(u.pathname==='/api/ship')return j(200,await ship(u.searchParams.get('sn')));
     if(u.pathname==='/api/track'){const id=D.cjo[u.searchParams.get('sn')];if(!id)return j(200,{track:null});const r=await cj('/shopping/order/getOrderDetail',{q:{orderId:id}});return j(200,{track:r.data?.trackNumber})}
-    j(404,{error:'nao encontrado'})}catch(e){log('Erro',String(e.message));j(500,{error:String(e.message)})}
+        if(u.pathname==='/api/freight'){const v=(await cj('/product/variant/query',{q:{pid:u.searchParams.get('pid')}})).data?.[0];if(!v)return j(200,{error:'Variante nao encontrada'});const r=await cj('/logistic/freightCalculate',{method:'POST',body:{startCountryCode:'CN',endCountryCode:'BR',products:[{quantity:1,vid:v.vid}]}});return j(200,{cost:v.variantSellPrice,opts:(r.data||[]).map(x=>({n:x.logisticName,p:x.logisticPrice,d:x.logisticAging}))})}j(404,{error:'nao encontrado'})}catch(e){log('Erro',String(e.message));j(500,{error:String(e.message)})}
 }).listen(PORT,()=>console.log('Tierrez AI v2 na porta '+PORT));
