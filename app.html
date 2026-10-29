@@ -35,3 +35,68 @@ if(cp){var m=cp-c-f-G.fixa-cp*(G.com+G.imp)/100;h+="<br>Vendendo a "+R(cp)+": lu
 o.innerHTML=h})}
   go();
 </script></body></html>
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#06080f"><title>Tierrez AI</title>
+<style>
+:root{--bg:#06080f;--sf:rgba(255,255,255,.045);--ln:rgba(255,255,255,.1);--ac:#22d3ee;--ac2:#8b5cf6;--tx:#e9eefc;--mu:#8590ad;--ok:#34d399;padding-top:env(safe-area-inset-top)}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(60% 38% at 100% -4%,rgba(139,92,246,.30),transparent),radial-gradient(55% 34% at 0 0,rgba(34,211,238,.20),transparent),var(--bg);background-attachment:fixed;color:var(--tx);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding:0 16px 120px;max-width:720px;margin:auto;min-height:100vh;font-variant-numeric:tabular-nums}
+header{display:flex;align-items:center;gap:13px;padding:22px 0 10px}
+.mono{width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,var(--ac),var(--ac2));display:grid;place-items:center;font:800 22px system-ui;color:#06101c;box-shadow:0 0 24px rgba(34,211,238,.35)}
+h1{font:750 22px system-ui;letter-spacing:-.02em;margin:0}h1 span{background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent;margin-left:6px}
+.sub{font:500 10.5px ui-monospace,Menlo,monospace;letter-spacing:.18em;color:var(--mu)}
+h2{font:650 16px system-ui;margin:24px 0 8px;letter-spacing:-.01em}.mu{color:var(--mu);font-size:13px}
+.c{background:var(--sf);border:1px solid var(--ln);border-radius:20px;padding:16px;margin:12px 0;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.hero{border-color:rgba(34,211,238,.4);box-shadow:0 0 44px rgba(34,211,238,.10),inset 0 0 60px rgba(139,92,246,.08)}.hero h2{margin:6px 0;font-size:22px}
+.eyebrow{font:600 10.5px ui-monospace,Menlo,monospace;letter-spacing:.22em;color:var(--ac)}
+button{font:inherit;font-weight:650;border:0;border-radius:13px;padding:11px 17px;background:linear-gradient(135deg,var(--ac),var(--ac2));color:#06101c;cursor:pointer}
+button.g{background:rgba(34,211,238,.07);color:var(--ac);border:1px solid rgba(34,211,238,.35)}button.w{width:100%;margin:8px 0}button:disabled{opacity:.5}
+input{font:inherit;width:100%;padding:12px;margin:4px 0 10px;border-radius:13px;border:1px solid var(--ln);background:rgba(0,0,0,.35);color:var(--tx)}
+input:focus{outline:1px solid var(--ac);box-shadow:0 0 0 4px rgba(34,211,238,.12)}label{font-size:12px;color:var(--mu)}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px}.row input{margin:0}.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}.chip{border:1px solid var(--ln);background:var(--sf);border-radius:99px;padding:7px 13px;font-size:13px;display:flex;align-items:center;gap:8px}
+.chip i{width:8px;height:8px;border-radius:50%;background:#f87171;box-shadow:0 0 10px #f87171}.chip i.ok{background:var(--ok);box-shadow:0 0 10px var(--ok)}
+.tag{font:600 10.5px ui-monospace,Menlo,monospace;letter-spacing:.06em;color:var(--ac);background:rgba(34,211,238,.1);border-radius:8px;padding:3px 9px}
+.lg{font-size:13px;color:var(--mu);border-left:2px solid var(--ac2);padding-left:11px;margin:9px 0}.lg b{color:var(--tx)}
+.seg{display:flex;background:var(--sf);border:1px solid var(--ln);border-radius:14px;padding:4px;margin:14px 0}.seg a{flex:1;text-align:center;padding:9px;border-radius:10px;color:var(--mu);font-size:14px;font-weight:600}.seg a.on{background:linear-gradient(135deg,rgba(34,211,238,.2),rgba(139,92,246,.25));color:var(--tx)}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0 6px}.prices div{border:1px solid var(--ln);border-radius:14px;padding:11px;background:rgba(0,0,0,.25)}.prices span{display:block;font:600 10px ui-monospace,Menlo,monospace;letter-spacing:.14em;color:var(--mu)}.prices b{font:700 20px ui-monospace,Menlo,monospace;color:var(--ac)}
+.vd{margin:8px 0;font-weight:650}img{width:60px;height:60px;border-radius:14px;object-fit:cover}
+nav{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));max-width:696px;margin:auto;display:flex;gap:2px;padding:6px;background:rgba(12,16,30,.78);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border:1px solid var(--ln);border-radius:22px;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+nav a{flex:1;text-align:center;padding:12px 2px;font-size:12px;font-weight:600;color:var(--mu);border-radius:16px}nav a.on{color:var(--tx);background:linear-gradient(135deg,rgba(34,211,238,.22),rgba(139,92,246,.28))}
+</style></head><body>
+<header><div class="mono">T</div><div><h1>Tierrez<span>AI</span></h1><div class="sub">COMMERCE SUITE</div></div></header>
+<div id="m"></div><nav id="n"></nav>
+<script>
+var T="home",SEG="shopee",SL=[],CH=[],PM=[],BRF=0,G={usd:5.5,mar:25,imp:4,com:14,fixa:4,mcom:14,mfixa:6};
+try{G=Object.assign(G,JSON.parse(localStorage.tc))}catch(e){}
+const $=id=>document.getElementById(id);
+function K(){try{if(!localStorage.tk)localStorage.tk=prompt("Senha do app")}catch(e){}return localStorage.tk||""}
+function A(p,o){o=o||{};o.headers={"x-key":K(),"Content-Type":"application/json"};return fetch(p,o).then(r=>{if(r.status==401)localStorage.removeItem("tk");return r.json()})}
+const R=v=>v.toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
+const pr=(c,f,com,fx)=>(c+f+fx)/Math.max(1-(com+G.imp+G.mar)/100,.05);
+function sv(k,v){G[k]=parseFloat(v)||0;localStorage.tc=JSON.stringify(G)}
+const TABS=[["home","Painel"],["ped","Pedidos"],["cli","Clientes"],["prod","Produtos"],["cfg","Ajustes"]];
+function set(h){$("m").innerHTML=h;$("n").innerHTML=TABS.map(t=>`<a class="${T==t[0]?"on":""}" onclick="T='${t[0]}';go()">${t[1]}</a>`).join("")}
+const seg=()=>`<div class=seg><a class="${SEG=="shopee"?"on":""}" onclick="SEG='shopee';go()">Shopee</a><a class="${SEG=="ml"?"on":""}" onclick="SEG='ml';go()">Mercado Livre</a></div>`;
+function go(){set("<p class=mu>Carregando…</p>");
+if(T=="home"){Promise.all([A("/api/status"),A("/api/ml/status")]).then(([s,m])=>{if(s.error)return set(`<div class=c>${s.error} <button class=g onclick="localStorage.removeItem('tk');go()">Tentar de novo</button></div>`);
+const chip=(n,ok)=>`<div class=chip><i class="${ok?"ok":""}"></i>${n}</div>`;
+set(`<div class="c hero"><div class=eyebrow>MISSÃO DE HOJE</div><h2>Validar seu primeiro produto</h2><p class=mu>Busque, calcule o frete real e a margem nas duas plataformas.</p><button onclick="T='prod';go()">Começar</button></div><div class=chips>${chip("Shopee",s.shopee)}${chip("Mercado Livre",m.ml)}${chip("CJ Dropshipping",s.cj)}</div><div class="c row"><div><b>Piloto automático</b><div class=mu>Compra pedidos Shopee na CJ e responde clientes a cada 5 min</div></div><button class=g onclick="A('/api/auto',{method:'POST'}).then(go)">${s.auto?"Desligar":"Ligar"}</button></div><h2>Atividade</h2>${s.log.slice(0,12).map(l=>`<div class=lg><b>${l.a}</b> · ${l.h.slice(11,16)}<br>${l.t}</div>`).join("")||"<div class=mu>Sem atividade ainda.</div>"}`)});return}
+if(T=="ped"){A(SEG=="ml"?"/api/ml/orders":"/api/orders").then(o=>{if(o.error)return set(seg()+`<div class=c>${o.error}</div>`);
+set(seg()+(o.length?o.map(x=>SEG=="ml"?`<div class=c><div class=row><b>#${x.id}</b><span class=tag>${x.status}</span></div><div class=mu>${x.items}</div><div>${R(x.total)}</div></div>`:`<div class=c><div class=row><b>${x.order_sn}</b><span class=tag>${x.order_status}</span></div><div class=mu>${(x.item_list||[]).map(i=>i.item_name+" ×"+i.model_quantity_purchased).join(", ")}</div><div class=btns>${x.order_status=="READY_TO_SHIP"?`<button onclick="this.disabled=1;A('/api/buy?sn=${x.order_sn}').then(()=>alert('Enviado à CJ'))">Comprar na CJ</button>`:""}<button class=g onclick="A('/api/ship?sn=${x.order_sn}').then(r=>alert(r.error||'Rastreio Shopee: '+(r.tracking||'gerando…')))">Organizar envio</button><button class=g onclick="A('/api/track?sn=${x.order_sn}').then(r=>alert(r.error||'Rastreio CJ: '+(r.track||'sem rastreio')))">Rastreio CJ</button></div></div>`).join(""):"<div class=c>Sem pedidos.</div>"))});return}
+              if(T=="cli"){A(SEG=="ml"?"/api/ml/questions":"/api/chats").then(l=>{if(l.error)return set(seg()+`<div class=c>${l.error}</div>`);CH=l;
+set(seg()+(l.length?l.map((c,i)=>`<div class=c><div class=row><b>${c.name}</b>${c.unread?`<span class=tag>${c.unread} nova(s)</span>`:""}</div><div class=mu>${c.text}</div><input id=rp${i} placeholder="Sua resposta"><button onclick="sd(${i})">Enviar</button></div>`).join(""):"<div class=c>Nada pendente.</div>"))});return}
+if(T=="prod"){set(`<h2>Buscar produtos</h2><div class=row><input id=q placeholder="ex: cable organizer"><button onclick="bs(0)">Buscar</button></div><button class="g w" onclick="bs(1)">Só armazém no Brasil</button><div id=l></div>`);return}
+if(T=="cfg"){set(`<h2>Conexões</h2><div class="c row"><b>Shopee</b><button class=g onclick="location='/auth/shopee?k='+K()">Conectar</button></div><div class="c row"><b>Mercado Livre</b><button class=g onclick="location='/auth/ml?k='+K()">Conectar</button></div><h2>Taxas e margem</h2><div class=c>${[["usd","Dólar (R$)"],["mar","Margem %"],["imp","Imposto %"],["com","Comissão Shopee %"],["fixa","Taxa fixa Shopee (R$)"],["mcom","Comissão Mercado Livre %"],["mfixa","Taxa fixa Mercado Livre (R$)"]].map(x=>`<label>${x[1]}</label><input type=number step=0.1 value="${G[x[0]]}" onchange="sv('${x[0]}',this.value)">`).join("")}<div class=mu>Confirme as taxas atuais no painel de cada plataforma.</div></div>`)}}
+function sd(i){const v=$("rp"+i).value;if(!v)return;const c=CH[i];(SEG=="ml"?A("/api/ml/answer",{method:"POST",body:JSON.stringify({id:c.id,text:v})}):A("/api/say",{method:"POST",body:JSON.stringify({to:c.to,text:v})})).then(r=>{alert(r.error||"Enviado");go()})}
+function bs(br){BRF=br?1:0;$("l").innerHTML="<p class=mu>Buscando…</p>";A(`/api/cj2?br=${BRF}&q=${encodeURIComponent($("q").value)}`).then(l=>{SL=Array.isArray(l)?l:[];
+$("l").innerHTML=SL.length?SL.map((p,i)=>`<div class=c><div class=row style="align-items:flex-start"><img src="${p.productImage}"><div style="flex:1"><b>${p.productNameEn}</b><div class=mu>custo ${R(parseFloat(p.sellPrice)*G.usd)}${BRF?" · armazém BR":""}</div></div></div><label>Preço médio dos concorrentes (R$)</label><input id=cp${i} type=number step=0.1><button onclick="vd(${i})">Validar produto</button><div id=vd${i} style="margin-top:10px"></div></div>`).join(""):`<div class=c>${BRF?"Nenhum produto com armazém no Brasil. Tente outro termo ou busque sem o filtro. ":"Nada encontrado. "}${JSON.stringify(l).slice(0,120)}</div>`})}
+function vd(i){const p=SL[i],o=$("vd"+i),cp=parseFloat($("cp"+i).value)||0;o.innerHTML="<span class=mu>Calculando frete…</span>";
+A(`/api/freight2?br=${BRF}&pid=${p.pid}`).then(r=>{if(r.error||!r.opts||!r.opts.length)return o.innerHTML="Não achei frete para o Brasil. "+(r.error||"");
+const c=(parseFloat(r.cost)||parseFloat(p.sellPrice))*G.usd,op=r.opts.slice().sort((a,b)=>parseFloat(a.p)-parseFloat(b.p))[0],f=parseFloat(op.p)*G.usd,ps=pr(c,f,G.com,G.fixa),pm=pr(c,f,G.mcom,G.mfixa);
+let h=`<div class=mu>Custo ${R(c)} + frete ${R(f)} · ${op.n} · prazo ${op.d||"?"} dias</div><div class=prices><div><span>SHOPEE</span><b>${R(ps)}</b></div><div><span>MERCADO LIVRE</span><b>${R(pm)}</b></div></div><div class=mu>Preços para ${G.mar}% de margem</div>`;
+if(cp){const m=cp-c-f-G.fixa-cp*(G.com+G.imp)/100,pc=m/cp*100;h+=`<div class=vd>${m>0&&pc>=15?"✅ Validado":"⚠️ Margem baixa"} · lucro ${R(m)} (${pc.toFixed(0)}%) a ${R(cp)} na Shopee</div>`}
+PM[i]=pm;o.innerHTML=h+`<label>Título em português (para o Mercado Livre)</label><input id=tt${i}><button class=g onclick="pubml(${i})">Publicar no Mercado Livre</button>`})}
+function pubml(i){const p=SL[i],t=$("tt"+i).value.trim();if(!t)return alert("Digite o título em português");if(!confirm("Publicar por "+R(PM[i])+"?"))return;
+A("/api/ml/publish",{method:"POST",body:JSON.stringify({title:t.slice(0,60),price:+PM[i].toFixed(2),qty:5,img:p.productImage})}).then(r=>alert(r.error||(r.permalink?"Publicado: "+r.permalink:JSON.stringify(r).slice(0,300))))}
+go();
+</script></body></html>
